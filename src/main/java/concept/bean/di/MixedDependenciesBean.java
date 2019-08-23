@@ -8,6 +8,9 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Scope(value= ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+/**
+ * https://docs.spring.io/spring/docs/current/spring-framework-reference/core.html#beans-ref-element
+ */
 public class MixedDependenciesBean {
 
     @Autowired

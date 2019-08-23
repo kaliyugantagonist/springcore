@@ -6,6 +6,9 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import java.util.Arrays;
 
+/**
+ * https://docs.spring.io/spring/docs/current/spring-framework-reference/core.html#beans-basics
+ */
 public class HelloWorldContainer {
 
     public static void main(String [] args){

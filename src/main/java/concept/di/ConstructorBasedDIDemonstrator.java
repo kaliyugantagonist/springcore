@@ -4,7 +4,10 @@ import concept.bean.di.ConstructorBasedDIBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class ConstructorBasedDemonstrator {
+/**
+ * https://docs.spring.io/spring/docs/current/spring-framework-reference/core.html#beans-constructor-injection
+ */
+public class ConstructorBasedDIDemonstrator {
 
     public static void main(String[] args) {
 

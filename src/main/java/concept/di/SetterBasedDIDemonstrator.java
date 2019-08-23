@@ -4,7 +4,10 @@ import concept.bean.di.SetterBasedDIBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class SetterBasedDemonstrator {
+/**
+ * https://docs.spring.io/spring/docs/current/spring-framework-reference/core.html#beans-setter-injection
+ */
+public class SetterBasedDIDemonstrator {
 
     public static void main(String[] args) {
 

@@ -5,6 +5,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
+/**
+ * https://docs.spring.io/spring/docs/current/spring-framework-reference/core.html#beans-setter-injection
+ */
 public class SetterBasedDIBean {
 
     private Dog dog;
