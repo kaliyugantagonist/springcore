@@ -1,6 +1,6 @@
 package concept.container;
 
-import concept.bean.HelloWorld;
+import concept.bean.HelloWorldBean;
 import concept.bean.PrototypeScopeBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -55,26 +55,26 @@ public class BeanScopeDemoContainer {
         ApplicationContext contextOne = new AnnotationConfigApplicationContext("concept.bean");
         System.out.println("**********Container-1");
 
-        HelloWorld helloWorld1 = contextOne.getBean(HelloWorld.class);
-        System.out.println(helloWorld1.hashCode());
+        HelloWorldBean helloWorldBean1 = contextOne.getBean(HelloWorldBean.class);
+        System.out.println(helloWorldBean1.hashCode());
 
-        HelloWorld helloWorld2 = contextOne.getBean(HelloWorld.class);
-        System.out.println(helloWorld2.hashCode());
+        HelloWorldBean helloWorldBean2 = contextOne.getBean(HelloWorldBean.class);
+        System.out.println(helloWorldBean2.hashCode());
 
-        HelloWorld helloWorld3 = contextOne.getBean(HelloWorld.class);
-        System.out.println(helloWorld3.hashCode());
+        HelloWorldBean helloWorldBean3 = contextOne.getBean(HelloWorldBean.class);
+        System.out.println(helloWorldBean3.hashCode());
 
         //This is a container
         ApplicationContext contextTwo = new AnnotationConfigApplicationContext("concept.bean");
         System.out.println("**********Container-2");
 
-        HelloWorld helloWorld4 = contextTwo.getBean(HelloWorld.class);
-        System.out.println(helloWorld4.hashCode());
+        HelloWorldBean helloWorldBean4 = contextTwo.getBean(HelloWorldBean.class);
+        System.out.println(helloWorldBean4.hashCode());
 
-        HelloWorld helloWorld5 = contextTwo.getBean(HelloWorld.class);
-        System.out.println(helloWorld5.hashCode());
+        HelloWorldBean helloWorldBean5 = contextTwo.getBean(HelloWorldBean.class);
+        System.out.println(helloWorldBean5.hashCode());
 
-        HelloWorld helloWorld6 = contextTwo.getBean(HelloWorld.class);
-        System.out.println(helloWorld6.hashCode());
+        HelloWorldBean helloWorldBean6 = contextTwo.getBean(HelloWorldBean.class);
+        System.out.println(helloWorldBean6.hashCode());
     }
 }

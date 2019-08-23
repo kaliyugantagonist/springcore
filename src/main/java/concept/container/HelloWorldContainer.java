@@ -1,8 +1,10 @@
 package concept.container;
 
-import concept.bean.HelloWorld;
+import concept.bean.HelloWorldBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import java.util.Arrays;
 
 public class HelloWorldContainer {
 
@@ -11,8 +13,15 @@ public class HelloWorldContainer {
         //This is a container
         ApplicationContext context = new AnnotationConfigApplicationContext("concept.bean");
 
-        HelloWorld helloWorld = context.getBean(HelloWorld.class);
+        BeanListingContainer beanListingContainer = new BeanListingContainer();
+        beanListingContainer.printBeanDefinitions(context);
 
-        helloWorld.printMessage();
+        System.out.println("****************************************************");
+
+        HelloWorldBean helloWorldBean = context.getBean(HelloWorldBean.class);
+
+        helloWorldBean.printMessage();
+
+        System.out.println(helloWorldBean.hashCode());
     }
 }
