@@ -1,7 +1,6 @@
-package concept.di;
+package concept.container.di;
 
 import concept.bean.entities.animalplanet.Cat;
-import concept.container.BeanListingContainer;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

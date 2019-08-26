@@ -18,6 +18,9 @@ public class BeanScopeDemoContainer {
      * Note the printed hash codes of the beans.
      */
     private static void demonstratePrototypeScope() {
+
+        System.out.println("Demonstrating prototype scope");
+
         //This is a container
         ApplicationContext contextOne = new AnnotationConfigApplicationContext("concept.bean");
         System.out.println("**********Container-1");
@@ -31,18 +34,20 @@ public class BeanScopeDemoContainer {
         PrototypeScopeBean prototypeScopeBean3 = contextOne.getBean(PrototypeScopeBean.class);
         System.out.println(prototypeScopeBean3.hashCode());
 
+
         //This is a container
         ApplicationContext contextTwo = new AnnotationConfigApplicationContext("concept.bean");
         System.out.println("**********Container-2");
 
-        PrototypeScopeBean prototypeScopeBean4 = contextOne.getBean(PrototypeScopeBean.class);
+        PrototypeScopeBean prototypeScopeBean4 = contextTwo.getBean(PrototypeScopeBean.class);
         System.out.println(prototypeScopeBean4.hashCode());
 
-        PrototypeScopeBean prototypeScopeBean5 = contextOne.getBean(PrototypeScopeBean.class);
+        PrototypeScopeBean prototypeScopeBean5 = contextTwo.getBean(PrototypeScopeBean.class);
         System.out.println(prototypeScopeBean5.hashCode());
 
-        PrototypeScopeBean prototypeScopeBean6 = contextOne.getBean(PrototypeScopeBean.class);
+        PrototypeScopeBean prototypeScopeBean6 = contextTwo.getBean(PrototypeScopeBean.class);
         System.out.println(prototypeScopeBean6.hashCode());
+
 
     }
 
@@ -51,6 +56,8 @@ public class BeanScopeDemoContainer {
      * Note the printed hash codes of the beans.
      */
     private static void demonstrateSingletonScope(){
+        System.out.println("Demonstrating singleton scope.");
+
         //This is a container
         ApplicationContext contextOne = new AnnotationConfigApplicationContext("concept.bean");
         System.out.println("**********Container-1");

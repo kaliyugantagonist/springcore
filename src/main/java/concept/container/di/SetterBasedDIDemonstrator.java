@@ -1,4 +1,4 @@
-package concept.di;
+package concept.container.di;
 
 import concept.bean.di.SetterBasedDIBean;
 import org.springframework.context.ApplicationContext;

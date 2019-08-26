@@ -1,4 +1,4 @@
-package concept.bean.di.initialization;
+package concept.bean.di.lifecycle;
 
 import concept.bean.entities.animalplanet.Dog;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package concept.di;
+package concept.container.di;
 
 import concept.bean.di.MixedDependenciesBean;
 import org.springframework.context.ApplicationContext;

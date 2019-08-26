@@ -1,6 +1,6 @@
-package concept.di.initialization;
+package concept.container.di.lifecycle;
 
-import concept.bean.di.initialization.LazyInitStandaloneBean;
+import concept.bean.di.lifecycle.LazyInitStandaloneBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

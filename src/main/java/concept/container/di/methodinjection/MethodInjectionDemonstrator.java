@@ -1,4 +1,4 @@
-package concept.methodinjection;
+package concept.container.di.methodinjection;
 
 import concept.bean.di.methodinjection.SingletonBean;
 import org.springframework.context.ApplicationContext;

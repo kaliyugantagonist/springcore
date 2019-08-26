@@ -1,4 +1,4 @@
-package concept.bean.di.initialization;
+package concept.bean.di.lifecycle;
 
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
@@ -10,7 +10,7 @@ import javax.annotation.PostConstruct;
 /**
  * https://docs.spring.io/spring/docs/current/spring-framework-reference/core.html#beans-factory-lazy-init
  */
-public class LazyInitDependencyBean {
+public class LazyInitStandaloneBean {
 
     @PostConstruct
     public void onInit(){
@@ -19,6 +19,6 @@ public class LazyInitDependencyBean {
 
     @Override
     public String toString() {
-        return "This lazy bean is a dependency in a eagerly-initialized bean}";
+        return "This is a standalone lazy init bean.";
     }
 }
