@@ -1,0 +1,4 @@
+Write code for following scenarios:
+- A @Service or even a @Component that has exactly one constructor and it is NOT annotated with @Autowired
+- A @Service or even a @Component that has more than one constructor and none is annotated with @Autowired
+(Check the entities.animalplanet beans before writing new ones to test)
